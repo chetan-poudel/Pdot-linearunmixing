@@ -64,7 +64,7 @@ end
 tic
 for m = 1:size(Mixed(1).st,1)
     for n = 1:size(Mixed(1).st,2)
-        % collect 3-channel data for each pixel and subtract background first
+        % collect multi-data for each pixel and subtract background first
         b = zeros(numchannels,1);
         for k = 1:numchannels
             b(k) = Mixed(k).st(m,n)- bkg(k);
