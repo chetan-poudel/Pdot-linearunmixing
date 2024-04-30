@@ -8,7 +8,7 @@ The first dataset includes files for excitation multiplexing:
 
 (b) ExcitationMultiplexCalibrationMatrix.mat
 
-This tif file contains the raw image data corresponding to Figure 3 and Figure S7 in the manuscript. Here, a brain slice was stained with 3 polymer dots and imaged in 3 channels. After using the accompanying script, a user can generate the unmixed images shown in Figure 3 and Figure S7. 
+This tif file contains the raw image data corresponding to Figure 3 and Figure S7 in the manuscript. Here, a brain slice was stained with 3 polymer dots and imaged in 3 channels. After using the accompanying script, a user can generate the unmixed images shown in the figure below. 
 
 ![<Excitation Multiplexing of 3 channels in the mouse brain>](https://github.com/chetan-poudel/Pdot-linearunmixing/blob/main/ExMultiplex.png)
 
@@ -19,7 +19,7 @@ The second dataset includes files for emission multiplexing:
 
 (b) EmissionMultiplexCalibrationMatrix.mat
 
-This tif file contains the raw data corresponding to Figure 2 and Figure S3 in the manuscript. Here, a brain slice was stained with 8 polymer dots and imaged in 8 channels. After using the accompanying script, a user can generate the unmixed images shown in Figure 2 and Figure S3. 
+This tif file contains the raw data corresponding to Figure 2 and Figure S3 in the manuscript. Here, a brain slice was stained with 8 polymer dots and imaged in 8 channels. After using the accompanying script, a user can generate the unmixed images shown in the figure below. 
 
 ![<Emission Multiplexing of 8 channels in the mouse brain>](https://github.com/chetan-poudel/Pdot-linearunmixing/blob/main/EmMultiplex.png)
 
