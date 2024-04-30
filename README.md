@@ -5,6 +5,7 @@ Two example image datasets and calibration matrixes are included.
 The first dataset includes files for excitation multiplexing:
 
 (a) Brain_mixedsignal_3channel_exmultiplex.tif
+
 (b) ExcitationMultiplexCalibrationMatrix.mat
 
 This tif file contains the raw image data corresponding to Figure 3 and Figure S7 in the manuscript. Here, a brain slice was stained with 3 polymer dots and imaged in 3 channels. After using the accompanying script, a user can generate the unmixed images shown in Figure 3 and Figure S7. 
@@ -15,6 +16,7 @@ This tif file contains the raw image data corresponding to Figure 3 and Figure S
 The second dataset includes files for emission multiplexing:
 
 (a) Brain_mixedsignal_8channel_emmultiplex.tif
+
 (b) EmissionMultiplexCalibrationMatrix.mat
 
 This tif file contains the raw data corresponding to Figure 2 and Figure S3 in the manuscript. Here, a brain slice was stained with 8 polymer dots and imaged in 8 channels. After using the accompanying script, a user can generate the unmixed images shown in Figure 2 and Figure S3. 
