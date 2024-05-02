@@ -64,7 +64,7 @@ end
 tic
 for m = 1:size(Mixed(1).st,1)
     for n = 1:size(Mixed(1).st,2)
-        % collect multi-data for each pixel and subtract background first
+        % collect 3-channel data for each pixel and subtract background first
         b = zeros(numchannels,1);
         for k = 1:numchannels
             b(k) = Mixed(k).st(m,n)- bkg(k);
@@ -102,15 +102,27 @@ end
 mixedStack = tiffreadVolume(raw_mixed_file);     
 mixedStackavg=mean(mixedStack,[1 2]);
 mixedStackavg=squeeze(mixedStackavg);
+disp("Mixed Stack Intensities")
+disp(mixedStackavg)
 figure(1)
 imagesc(mixedStackavg); colormap gray
 
 unmixedStack = tiffreadVolume("Unmixed_dataset.tif");
 unmixedStackavg=mean(unmixedStack,[1 2]);
 unmixedStackavg=squeeze(unmixedStackavg);
+disp("Unmixed Stack Intensities")
+disp(mixedStackavg)
 figure(2)
 imagesc(unmixedStackavg); colormap gray
 
-load("ExcitationMultiplexCalibrationMatrix.mat")
+if Multiplexing == 1
+    load("ExcitationMultiplexCalibrationMatrix.mat")
+elseif Multiplexing == 2
+    load("EmissionMultiplexCalibrationMatrix.mat")
+end 
+
+disp("Normalized Calibration Matrix")
+disp("Row elements add to 1.")
+disp(CM)
 figure(3)
 imagesc(CM); colormap gray
